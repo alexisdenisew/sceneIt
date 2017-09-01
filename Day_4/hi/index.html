@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>PopSugar</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <canvas id='canv'></canvas>
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="gooeyCottonCandy">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 100 -9"/>
+    </filter>
+  </defs>
+</svg>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

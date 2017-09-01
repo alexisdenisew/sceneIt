@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <title>title</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 0 30">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-assets>
+            <img id="sky" src='GC.jpg'>
+            <a-asset-item id = "mmobj" src= "80s-couch-obj/80s-couch.obj"></a-asset-item>
+            <a-asset-item id = "mmmtl" src= "80s-couch-obj/80s-couch.mtl"></a-asset-item>
+        </a-assets>
+        <!--<a-box material="src: #corgi" depth="2" height="4" width="0.5" depth="2" position="0 1 -5"></a-box>-->
+        <a-sky src="#sky"></a-sky>
+        <a-obj-model src= "#mmobj" mtl="#mmmtl" color = "black" position = "-3 -3 " scale = "2 2 2"></a-obj-model>
+        
+        
+        <a-plane id="front" color="#bbc3cc" height="40" width="70" position="-2.168 0 -23.538"></a-plane>
+<a-plane id="left" color="#bbc3cc" height="40" width="80" position="-37.005 0 15.942" rotation="0 90 0"></a-plane>
+<a-plane id="right" color="#bbc3cc" height="40" width="100" position="32.159 0 24" rotation="0 -90 0"></a-plane>
+<a-plane id="back" color="#bbc3cc" height="40" width="70" position="-2.150 0 44.604" rotation="0.458 180.000 -180.000"></a-plane>
+
+    </a-scene>
+</body>
+
+</html>

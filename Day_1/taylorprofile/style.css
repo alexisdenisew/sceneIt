@@ -1,0 +1,50 @@
+h1{
+   color: #52656B;
+   text-align: center;
+   font-family: 'Ewert', cursive;
+}
+
+#quote {
+    font-style: italic;
+    padding: 25px;
+    text-align: center;
+}
+
+#bod {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3{
+    color: #CDFF50;
+}
+
+#content{
+    background-color: #FF3B77;
+    background:blue;
+    width:50%;
+    position:absolute;
+    top:10%;
+}
+
+#hob, #skills {
+    border: dotted;
+    width:45%;
+    display: inline-block;
+    margin: 1.7%;
+    border-color:#52656B;
+}
+
+.git{
+    margin: 37%;
+    padding: 15px;
+}
+
+#pic {
+    border-radius: 50%;
+    margin: auto;
+}
+
+img{
+    text-align: center;
+    margin: auto;
+}

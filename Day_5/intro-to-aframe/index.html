@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <title>title</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 0 5">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-assets>
+            <!--<img id="corgi" src='puppy-2.jpg'>-->
+            <img id="sky" src='GC.jpg'>
+            <a-asset-item id = "mmobj" src= "spiderman-scene-obj/spiderman-scene.obj"></a-asset-item>
+            <a-asset-item id = "mmmtl" src= "spiderman-scene-obj/spiderman-scene.mtl"></a-asset-item>
+        </a-assets>
+        <!--<a-box material="src: #corgi" depth="2" height="4" width="0.5" depth="2" position="0 1 -5"></a-box>-->
+        <a-sky src="#sky"></a-sky>
+        <a-obj-model src= "#mmobj" mtl="#mmmtl" position = "0 -3 -5" scale = "5 5 5"></a-obj-model>
+    </a-scene>
+</body>
+
+</html>

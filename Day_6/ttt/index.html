@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>A-Frame DOM Manipulation</title>
+    <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <a-entity position="0 -2.6 3.5">
+            <a-camera>
+                <a-cursor>
+                </a-cursor>
+            </a-camera>
+        </a-entity>
+        <a-entity id="win" position="3 2 -2"  scale="7 7 7"  text="value:no one has won yet; color:black" width="4" height="2"></a-entity>
+        <a-box color="grey" position="-3 0.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('0,0')" id="0,0">
+           
+        </a-box>
+        <a-box color="grey" position="-0 0.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('0,1')" id="0,1">
+        </a-box>
+        
+        <a-box color="grey" position="3 0.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('0,2')" id="0,2">
+        </a-box>
+        
+        <a-box color="grey" position="-3 -1 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('1,0')" id="1,0">
+        </a-box>
+        
+        <a-box color="grey" position="0 -1 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('1,1')" id="1,1">
+        </a-box>
+        
+        <a-box color="grey" position="3 -1 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('1,2')" id="1,2">
+        </a-box>
+        
+        
+        <a-box color="grey" position="-3 -2.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('2,0')" id="2,0">
+        </a-box>
+        
+        <a-box color="grey" position="0 -2.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('2,1')" id="2,1">
+        </a-box>
+        
+        <a-box color="grey" position="3 -2.5 -2" height=" 1" width=" 1" depth=" 1" onclick="clicked('2,2')" id="2,2">
+        </a-box>
+        
+    </a-scene>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    <title>title</title>
+</head>
+
+<body>
+<a-scene>
+    <a-entity>
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-entity>
+    <a-box color = "tomato" position = "0 0 -5">
+        <a-animation dur attribute="rotation" begin = "click" to= "90 0 0"></a-animation>
+        <a-animation dur = "500" attribute = "color" to = "purple" begin = "click"></a-animation>
+        <a-animation dur = "500" attribute = "position" from = "0 0 -5" to = "0 0 -10" begin = "click"></a-animation>
+    </a-box>
+</a-scene>
+</body>
+
+</html>
